@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/logo_USPNet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/semfio_logo"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/texto_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuário:"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edit_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <TextView
+            android:id="@+id/texto_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senha:  "
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edit_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botao_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/status_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/botoesAtalho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/whatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/whatsapp"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/chrome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chrome"
+            android:layout_toLeftOf="@id/whatsapp"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/facebook"
+            android:layout_toRightOf="@id/whatsapp"
+            android:padding="10dp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
